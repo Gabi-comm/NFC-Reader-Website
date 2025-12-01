@@ -27,7 +27,7 @@
 
      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(to bottom, #287617, #42ca24);
 
-     animation: 2s ease-in-out 2s fade-out;
+     animation: 2s ease-in-out forwards 2s fade-out;
  }
 
 
@@ -64,7 +64,7 @@
      box-shadow: 0px 5px 5px -2px #0f4104;
      border-radius: .25rem;
      padding: 3rem 1rem;
-     animation: 1.5s ease-out 0s slide-up;
+     animation: 1.5s ease-out forwards 0s slide-up;
  }
 
  .heading-sub,
