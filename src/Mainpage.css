@@ -24,18 +24,23 @@
      display: flex;
      flex-direction: column;
      justify-content: space-between;
-     padding: 2rem 3rem;
+     padding: 2rem 1.5rem;
+
+     background: linear-gradient(to bottom, #878274, #24221a);
+     color: white;
 
  }
 
  .main-section {
      min-height: 100vh;
-     padding: 2rem 3rem;
+     padding: 2rem 1.5rem;
+
+     background: linear-gradient(to bottom, #dfdcda, #858176);
  }
 
  .icon-logo {
-     width: 100px;
-     height: 100px;
+     width: 75px;
+     height: 75px;
      display: block;
      margin-bottom: 1rem;
      /* GAB PAPALIT ABSOLUTE FILE PATH NG LOGO NA TO */
@@ -47,33 +52,68 @@
      width: 50px;
      height: 50px;
      background: url('C:\Users\memory\NFC-Reader-Website\public\moab.jpg') center/contain no-repeat;
-     margin-right: 1rem;
+     margin-right: .5rem;
+
  }
 
  .logout-section {
      display: flex;
-     width: 80%;
-     align-items: center;
 
+     align-items: center;
      justify-content: flex-start;
+
+
+ }
+
+ .logo-section p {
+     margin-top: .5rem;
+     word-wrap: pretty;
  }
 
 
  .logout-section a {
      display: inline;
+     text-decoration: none;
+     color: white;
+     font-weight: 500;
+     padding: .5rem;
  }
 
  .list-item {
      border: none;
+     margin-bottom: 1rem;
+     font-weight: bold;
+     font-size: 1.25rem;
+     background-color: transparent !important;
+     color: white;
+     transition: color .1s ease-in-out 0s;
  }
 
  .list-group {
      text-align: center;
 
+
+
  }
 
  .logo-section {
      text-align: center;
+     font-weight: 500;
+     font-size: .90rem;
+ }
+
+ .logout-section a:hover,
+ .logout-section a:focus,
+ .list-item:hover,
+ .list-item:focus {
+     color: #42ca24 !important;
+
+ }
+
+ .logout-section a:active,
+ .list-item:active {
+     color: #287617 !important;
+
  }
 
  @media (max-width: 992px) {
@@ -87,7 +127,8 @@
 
      .logout-section>a {
          display: block;
-         background-color: red;
+         margin-top: .5rem;
+
      }
 
      .sidebar-nav {
@@ -98,4 +139,11 @@
      .moab-logo {
          margin: 0;
      }
+
+     .list-item {
+
+         margin-bottom: 0.5rem;
+
+     }
+
  }
