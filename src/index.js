@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import Success from './Success';
+import Main from './Mainpage';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -11,7 +12,7 @@ root.render(
   //   <App />
   // </React.StrictMode>
   <React.StrictMode>
-    <Success />
+    <Main />
   </React.StrictMode>
 );
 

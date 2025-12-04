@@ -1,0 +1,29 @@
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&display=swap');
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+
+ }
+
+ html {
+     line-height: 1.5;
+     font-size: 1rem;
+     font-family: apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+         sans-serif;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+
+
+ }
+
+ .icon-logo {
+     width: 150px;
+     height: 200px;
+     display: block;
+     margin-bottom: 1rem;
+     /* GAB PAPALIT ABSOLUTE FILE PATH NG LOGO NA TO */
+     background: url('C:\Users\memory\NFC-Reader-Website\public\icon.png') center/contain no-repeat;
+ }
