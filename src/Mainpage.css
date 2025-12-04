@@ -19,11 +19,83 @@
 
  }
 
+ .sidebar-nav {
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     padding: 2rem 3rem;
+
+ }
+
+ .main-section {
+     min-height: 100vh;
+     padding: 2rem 3rem;
+ }
+
  .icon-logo {
-     width: 150px;
-     height: 200px;
+     width: 100px;
+     height: 100px;
      display: block;
      margin-bottom: 1rem;
      /* GAB PAPALIT ABSOLUTE FILE PATH NG LOGO NA TO */
      background: url('C:\Users\memory\NFC-Reader-Website\public\icon.png') center/contain no-repeat;
+     margin: 0 auto;
+ }
+
+ .moab-logo {
+     width: 50px;
+     height: 50px;
+     background: url('C:\Users\memory\NFC-Reader-Website\public\moab.jpg') center/contain no-repeat;
+     margin-right: 1rem;
+ }
+
+ .logout-section {
+     display: flex;
+     width: 80%;
+     align-items: center;
+
+     justify-content: flex-start;
+ }
+
+
+ .logout-section a {
+     display: inline;
+ }
+
+ .list-item {
+     border: none;
+ }
+
+ .list-group {
+     text-align: center;
+
+ }
+
+ .logo-section {
+     text-align: center;
+ }
+
+ @media (max-width: 992px) {
+     .logout-section {
+         display: flex;
+         width: 100%;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+     }
+
+     .logout-section>a {
+         display: block;
+         background-color: red;
+     }
+
+     .sidebar-nav {
+         min-height: auto;
+
+     }
+
+     .moab-logo {
+         margin: 0;
+     }
  }
