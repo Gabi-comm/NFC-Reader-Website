@@ -20,7 +20,7 @@
  }
 
  .sidebar-nav {
-     min-height: 100vh;
+     height: 100vh;
      display: flex;
      flex-direction: column;
      justify-content: space-between;
@@ -29,14 +29,24 @@
      background: linear-gradient(to bottom, #878274, #24221a);
      color: white;
 
+
+
+ }
+
+ .background-color-container {
+     background-color: #24221a;
  }
 
  .main-section {
      min-height: 100vh;
      padding: 2rem 1.5rem;
 
+
      background: linear-gradient(to bottom, #dfdcda, #858176);
  }
+
+
+
 
  .icon-logo {
      width: 75px;
@@ -58,7 +68,7 @@
 
  .logout-section {
      display: flex;
-
+     font-size: 1.25rem;
      align-items: center;
      justify-content: flex-start;
 
@@ -67,6 +77,7 @@
 
  .logo-section p {
      margin-top: .5rem;
+     font-size: 1rem;
      word-wrap: pretty;
  }
 
@@ -116,6 +127,64 @@
 
  }
 
+
+ .form-container {
+     margin: 0 auto;
+     display: flex;
+     height: 100%;
+     justify-content: center;
+     align-items: center;
+
+ }
+
+ .form-card-container {
+     width: 100%;
+     padding: 2rem;
+     background-color: #24221a;
+     color: white;
+     font-weight: 500;
+     font-size: 1.2rem;
+     box-shadow: 5px 5px 5px -2px rgba(36, 34, 26, 0.4);
+ }
+
+ .add-member-button {
+     width: 100%;
+     margin-top: 1rem;
+     background-color: #016401;
+     padding: .5rem 2rem;
+     border: none;
+ }
+
+ .form-heading {
+     text-align: center;
+     margin: 0;
+     margin-bottom: 1.5rem;
+     font-size: 2rem;
+ }
+
+ .form-input,
+ .form-input:focus {
+     background-color: #9f9b93;
+
+     padding: .5rem;
+     border: #9f9b93;
+     color: white;
+     box-shadow: none;
+ }
+
+ .select-hover:hover {
+     background-color: none;
+ }
+
+ .form-input::placeholder {
+     color: white;
+ }
+
+ .form-input .select-hover:hover {
+     background-color: none !important;
+     color: white;
+ }
+
  @media (max-width: 992px) {
      .logout-section {
          display: flex;
@@ -144,6 +213,10 @@
 
          margin-bottom: 0.5rem;
 
+     }
+
+     .sidebar-nav {
+         height: 100%;
      }
 
  }
