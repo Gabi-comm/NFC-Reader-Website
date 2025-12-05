@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import Success from './Success';
-import Main from './Mainpage';
 import reportWebVitals from './reportWebVitals';
 import Register from './Register.js';
+import Officers from './Officers.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,7 +13,7 @@ root.render(
   //   <App />
   // </React.StrictMode>
   <React.StrictMode>
-    <Register />
+    <Officers />
   </React.StrictMode>
 );
 
