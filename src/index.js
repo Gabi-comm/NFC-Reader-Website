@@ -5,6 +5,7 @@ import App from './App';
 import Success from './Success';
 import Main from './Mainpage';
 import reportWebVitals from './reportWebVitals';
+import Register from './Register.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,7 +13,7 @@ root.render(
   //   <App />
   // </React.StrictMode>
   <React.StrictMode>
-    <Main />
+    <Register />
   </React.StrictMode>
 );
 

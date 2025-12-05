@@ -170,6 +170,8 @@
      border: #9f9b93;
      color: white;
      box-shadow: none;
+     outline: none !important;
+
  }
 
  .select-hover:hover {

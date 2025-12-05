@@ -7,7 +7,7 @@ import { ListGroup, ListGroupItem } from "reactstrap";
 import { Form, FormGroup, Label, Input, Button, FormText, Card } from 'reactstrap';
 
 
-function Main() {
+function Register() {
     return (
         <section >
             <Container fluid className='background-color-container'>
@@ -98,7 +98,7 @@ function Main() {
                                         </Label>
                                         <Input
                                             id="exampleSelect"
-                                            className='form-input'
+                                            className='form-input select-input'
                                             name="select"
                                             type="select"
                                         >
@@ -148,4 +148,4 @@ function Main() {
     );
 }
 
-export default Main;
+export default Register;
