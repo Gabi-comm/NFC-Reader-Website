@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import logoVideo from './logo.mp4';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 import Auth from './Auth';
+import Register from './Register';
+import Officers from './Officers';
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -34,7 +37,11 @@ function App() {
         </div>
       ) : (
         <main className="app-main">
-          <Auth />
+          <Routes>
+            <Route path="/" element={<Auth />} />
+            <Route path="/Register" element={<Register />} />
+            <Route path="/Officer" element={<Officers />} />
+          </Routes>
         </main>
       )}
     </div>

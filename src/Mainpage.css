@@ -40,8 +40,6 @@
  .main-section {
      min-height: 100vh;
      padding: 2rem 1.5rem;
-
-
      background: linear-gradient(to bottom, #dfdcda, #858176);
  }
 
@@ -54,14 +52,14 @@
      display: block;
      margin-bottom: 1rem;
      /* GAB PAPALIT ABSOLUTE FILE PATH NG LOGO NA TO */
-     background: url('C:\Users\memory\NFC-Reader-Website\public\icon.png') center/contain no-repeat;
+     background: url('D:\Document\GitHub\NFC-Reader-Website\public\icon.png') center/contain no-repeat;
      margin: 0 auto;
  }
 
  .moab-logo {
      width: 50px;
      height: 50px;
-     background: url('C:\Users\memory\NFC-Reader-Website\public\moab.jpg') center/contain no-repeat;
+     background: url('D:\Document\GitHub\NFC-Reader-Website\public\moab.jpg') center/contain no-repeat;
      margin-right: .5rem;
 
  }

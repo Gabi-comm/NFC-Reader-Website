@@ -1,22 +1,48 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; 
 import './App.css';
+import { supabase } from './service/db';
 
 export default function Auth() {
   const [isSignUp, setIsSignUp] = useState(false);
   const [form, setForm] = useState({ email: '', password: '', name: '' });
+  const [error, setError] = useState(null);
+  const navigate = useNavigate();
 
   function handleChange(e) {
     setForm({ ...form, [e.target.name]: e.target.value });
   }
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    if (isSignUp) {
-      console.log('Sign Up:', form);
-      alert('Sign up submitted - check console');
+  async function handleSubmit(e) {
+  e.preventDefault();
+  setError(null);
+
+  if (isSignUp) {
+    // Sign Up
+      const { error } = await supabase.auth.signUp({
+        email: form.email,
+        password: form.password,
+      });
+
+      if (error) {
+        setError(error.message);
+      } else {
+        alert('Sign up successful!');
+        
+      }
     } else {
-      console.log('Sign In:', form);
-      alert('Sign in submitted - check console');
+      // Sign In (using the new API if applicable)
+      const { data, error } = await supabase.auth.signInWithPassword({
+        email: form.email,
+        password: form.password,
+      });
+
+      if (error) {
+        setError(error.message);
+      } else {
+        alert('Sign in successful!');
+        navigate('/register');
+      }
     }
   }
 
@@ -25,6 +51,9 @@ export default function Auth() {
       <div className="auth-card">
         <h2 className="auth-title">{isSignUp ? 'Hello!' : 'Hi There!'}</h2>
         <p className="auth-sub">{isSignUp ? 'Sign up to continue' : 'Sign in to continue'}</p>
+        
+        {error && <p className="error-message">{error}</p>}
+
         <form className="auth-form" onSubmit={handleSubmit}>
           {isSignUp && (
             <input

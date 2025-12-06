@@ -6,14 +6,14 @@ import Success from './Success';
 import reportWebVitals from './reportWebVitals';
 import Register from './Register.js';
 import Officers from './Officers.js';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  // <React.StrictMode>
-  //   <App />
-  // </React.StrictMode>
   <React.StrictMode>
-    <Officers />
+    <Router>
+      <App />
+    </Router>
   </React.StrictMode>
 );
 
