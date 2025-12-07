@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; 
+import { useNavigate } from 'react-router-dom';
 import './App.css';
 import { supabase } from './service/db';
 
@@ -14,11 +14,11 @@ export default function Auth() {
   }
 
   async function handleSubmit(e) {
-  e.preventDefault();
-  setError(null);
+    e.preventDefault();
+    setError(null);
 
-  if (isSignUp) {
-    // Sign Up
+    if (isSignUp) {
+      // Sign Up
       const { error } = await supabase.auth.signUp({
         email: form.email,
         password: form.password,
@@ -28,7 +28,7 @@ export default function Auth() {
         setError(error.message);
       } else {
         alert('Sign up successful!');
-        
+
       }
     } else {
       // Sign In (using the new API if applicable)
@@ -51,7 +51,7 @@ export default function Auth() {
       <div className="auth-card">
         <h2 className="auth-title">{isSignUp ? 'Hello!' : 'Hi There!'}</h2>
         <p className="auth-sub">{isSignUp ? 'Sign up to continue' : 'Sign in to continue'}</p>
-        
+
         {error && <p className="error-message">{error}</p>}
 
         <form className="auth-form" onSubmit={handleSubmit}>
