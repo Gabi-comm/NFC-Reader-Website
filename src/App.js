@@ -11,7 +11,7 @@ function App() {
   const [splashFadeOut, setSplashFadeOut] = useState(false);
 
   useEffect(() => {
-    
+
     const fadeOutTimer = setTimeout(() => setSplashFadeOut(true), 1800);
     const hideTimer = setTimeout(() => setShowSplash(false), 2400);
     return () => {

@@ -37,16 +37,31 @@
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(8px) scale(0.99); }
-  to { opacity: 1; transform: translateY(0) scale(1); }
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.99);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 @keyframes fadeOut {
-  from { opacity: 1; transform: translateY(0) scale(1); }
-  to { opacity: 0; transform: translateY(-6px) scale(0.995); }
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-6px) scale(0.995);
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
+
   /* Only apply the spin animation to non-video logo elements (e.g. SVG/img).
      This prevents `logo.mp4` (a <video>) from rotating. */
   .App-logo:not(video) {
@@ -73,6 +88,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -90,8 +106,11 @@
 
 .app-main {
   width: 100%;
-  max-width: 960px;
-  padding: 32px;
+
+  /* Hindi naging fullscreen dahil dito */
+
+  /* max-width: 960px; */
+  /* padding: 32px; */
 }
 
 /* Auth styles */
@@ -105,18 +124,19 @@
 .auth-card {
   width: 100%;
   max-width: 420px;
-  background: linear-gradient(180deg, rgb(31, 31, 31), rgba(255,255,255,0.02));
-  border: 1px solid rgba(255,255,255,0.06);
+  background: linear-gradient(180deg, rgb(31, 31, 31), rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(6px);
   padding: 28px;
   border-radius: 12px;
-  box-shadow: 0 6px 30px rgba(0,0,0,0.6);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.6);
 }
 
 .auth-title {
   margin: 0 0 6px 0;
   color: #fff;
 }
+
 .auth-sub {
   margin: 0 0 18px 0;
   color: #bfc3c6;
@@ -129,15 +149,17 @@
 }
 
 .auth-input {
-  background: rgba(255,255,255,0.02);
-  border: 1px solid rgba(255,255,255,0.06);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   color: #fff;
   padding: 12px 14px;
   border-radius: 8px;
   outline: none;
 }
 
-.auth-input::placeholder { color: rgba(255,255,255,0.45); }
+.auth-input::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
 
 .auth-button {
   margin-top: 6px;
@@ -167,4 +189,6 @@
   padding: 6px;
 }
 
-.auth-toggle-btn:hover { opacity: 0.9; }
+.auth-toggle-btn:hover {
+  opacity: 0.9;
+}
