@@ -5,6 +5,7 @@ import './App.css';
 import Auth from './Auth';
 import Register from './Register';
 import Officers from './Officers';
+import Success from './Success';
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -39,6 +40,7 @@ function App() {
         <main className="app-main">
           <Routes>
             <Route path="/" element={<Auth />} />
+            <Route path="/Success" element={<Success />} />
             <Route path="/Register" element={<Register />} />
             <Route path="/Officer" element={<Officers />} />
           </Routes>

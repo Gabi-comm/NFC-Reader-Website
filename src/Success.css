@@ -5,6 +5,7 @@
      padding: 0;
      box-sizing: border-box;
 
+
  }
 
  html {
@@ -28,6 +29,7 @@
      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(to bottom, #287617, #42ca24);
 
      animation: 2s ease-in-out forwards 2s fade-out;
+     z-index: 3;
  }
 
 
@@ -39,6 +41,7 @@
      margin-bottom: 1rem;
      /* GAB PAPALIT ABSOLUTE FILE PATH NG LOGO NA TO */
      background: url('C:\Users\memory\NFC-Reader-Website\public\icon.png') center/contain no-repeat;
+     z-index: 3;
  }
 
  .center {
@@ -65,6 +68,8 @@
      border-radius: .25rem;
      padding: 3rem 1rem;
      animation: 1.5s ease-out forwards 0s slide-up;
+     z-index: 3;
+
  }
 
  .heading-sub,
@@ -72,11 +77,13 @@
      color: white;
      font-family: 'Pixelify Sans';
      text-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.9);
+     z-index: 3;
  }
 
  .heading-sub {
      font-size: 1.75rem;
      margin: 0;
+     z-index: 3;
  }
 
  /* For fadeout of container */
@@ -87,6 +94,7 @@
 
      to {
          opacity: 0;
+         display: none;
      }
  }
 

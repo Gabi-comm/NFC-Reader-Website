@@ -47,8 +47,8 @@
 
 
  .icon-logo-sidebar {
-     width: 55px;
-     height: 55px;
+     width: 75px;
+     height: 75px;
      display: block;
      margin-bottom: .5rem;
      /* GAB PAPALIT ABSOLUTE FILE PATH NG LOGO NA TO */
@@ -103,6 +103,7 @@
 
 
 
+
  }
 
  .logo-section {
@@ -148,10 +149,23 @@
  .add-member-button {
      width: 100%;
      margin-top: 1rem;
-     background-color: #016401;
+     background-color: hsl(120, 98%, 20%);
      padding: .5rem 2rem;
      border: none;
  }
+
+ .add-member-button:hover,
+ .add-member-button:focus {
+
+     background-color: hsl(120, 90%, 18%);
+
+ }
+
+ .add-member-button:active {
+     background-color: hsl(120, 100%, 21%) !important;
+ }
+
+
 
  .form-heading {
      text-align: center;
