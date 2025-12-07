@@ -15,7 +15,7 @@ function Officers() {
 
                     <Col xs='12' lg='2' className='sidebar-nav'>
                         <section className='logo-section'>
-                            <div className='icon-logo'></div>
+                            <div className='icon-logo-sidebar'></div>
                             <p>Associaton of Computer Studies Students</p>
                         </section>
                         <section>
